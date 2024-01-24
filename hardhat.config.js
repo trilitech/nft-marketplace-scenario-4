@@ -18,15 +18,15 @@ const PRIVATE_KEY =
   "";
 
 const ETHERLINK_RPC_URL =
-  process.env.REACT_APP_API_URL ||
+  process.env.ETHERLINK_RPC_URL ||
   "https://node.ghostnet.etherlink.com";
 
 const NIGHTLY_RPC_URL =
-  process.env.REACT_APP_API_URL_NIGHTLY ||
+  process.env.NIGHTLY_RPC_URL ||
   "";
 
 const ETHERLINK_API_KEY = 
-  process.env.REACT_APP_ETHERLINK_API_KEY || 
+  process.env.ETHERLINK_API_KEY || 
   "";
 // Specific private key for the nightly chain with founds
 const NIGHTLY_PRIVATE_KEY =

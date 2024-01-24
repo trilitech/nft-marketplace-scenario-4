@@ -2,27 +2,41 @@
 
 This code is from the Tutorial [Build your own NFT Marketplace from Scratch](https://docs.alchemy.com/alchemy/) built by [alchemy.com](https://alchemy.com)
 
-The `.env` file should follow this:
+## Setup
+
+Create a `.env` file like this:
 ```
-REACT_APP_API_URL=https://node.ghostnet.etherlink.com
+ETHERLINK_RPC_URL=https://node.ghostnet.etherlink.com
 
-REACT_APP_API_URL_NIGHTLY=https://node.2024-01-09.etherlink-nightly.tzalpha.net
+NIGHTLY_RPC_URL=https://node.2024-01-22.etherlink-nightly.tzalpha.net
+REACT_APP_NIGHTLY_CHAINID=20240122
+NIGHTLY_EXPLORER=https://explorer.2024-01-22.etherlink-nightly.tzalpha.net
 
-REACT_APP_PRIVATE_KEY=
-REACT_APP_ETHERLINK_API_KEY=YOUCANCOPYME0000000000000000000000
+PRIVATE_KEY=
+NIGHTLY_PRIVATE_KEY=
+ETHERLINK_API_KEY=
 
 REACT_APP_PINATA_KEY=
 REACT_APP_PINATA_SECRET=
+
+MUMBAI_RPC_URL=https://polygon-mumbai.g.alchemy.com/v2/<api-key>
+POLYGONSCAN_API_KEY=
 ```
 
-First deploy the Marketplace contract:
+Then install dependencies and deploy the Marketplace contract:
 ```
 npm install
 npx hardhat compile
 npx hardhat run scripts/deploy.js --network etherlink
 ```
 
-Run the marketplace locally, run the below
-```bash
+## Run locally
+
+To run it locally, you can use:
+```
 npm start
 ```
+
+## Usage
+
+If you want to use the marketplace, remember to add the correct network in your metamask.
